@@ -18,7 +18,7 @@ Méthodes:
 Utilisation:
 - Créez deux joueurs en spécifiant leur nom et élément.
 - Les joueurs s'affrontent en choisissant des actions (attaquer, se protéger, se soigner).
-- Le combat se déroule jusqu'à ce que l'un des joueurs atteigne 0 HP.
+- Le combat se déroule jusqu'à ce que l'un des joueurs atteigne 0 HPs.
 
 Exemple d'utilisation:
 
@@ -63,6 +63,7 @@ class Player:
             self.hp += healed_hp
             self.heal_remaining -= 1
             print(f"{self.name} se soigne de {healed_hp} points de vie.")
+            if 
 
 water_attacks = [Attack("Hydroblast"), Attack("Aqua Jet"), Attack("Tsunami")]
 fire_attacks = [Attack("Fireball"), Attack("HellFlame"), Attack("Inferno")]
