@@ -40,7 +40,7 @@ class Player:
     def __init__(self, name, element):
         self.name = name
         self.element = element
-        self.hp = 100
+        self.hp = 200
         self.shield = 0
         self.heal_remaining = 3
 
@@ -49,7 +49,7 @@ class Player:
 
     def attack(self, target):
         print(f"{self.name} attaque avec {self.element.attacks[random.randint(0, 2)].name}")
-        damage = random.randint(10, 30)
+        damage = random.randint(20, 50)
         target.take_damage(damage)
         print(f"{target.name} perd {damage} points de vie.")
 
